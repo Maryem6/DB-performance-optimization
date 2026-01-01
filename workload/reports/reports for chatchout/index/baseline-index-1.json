@@ -1,0 +1,148 @@
+{
+    "metrics": {
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0.0084215,
+            "avg": 0.014127415999999985,
+            "max": 0.773391,
+            "p(90)": 0.012160800000000001,
+            "p(95)": 0.014089599999999999
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "min": 0,
+            "med": 0,
+            "avg": 0.004420869,
+            "max": 0.593217
+        },
+        "checks": {
+            "passes": 982,
+            "fails": 18,
+            "value": 0.982
+        },
+        "data_sent": {
+            "count": 141940,
+            "rate": 1342.2293458617319
+        },
+        "http_req_waiting": {
+            "med": 65.568295,
+            "avg": 54.278771287,
+            "max": 168.611639,
+            "p(90)": 114.6420902,
+            "p(95)": 125.7774769,
+            "min": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 0.835701,
+            "med": 72.2119125,
+            "avg": 54.96552776171083,
+            "max": 168.691316,
+            "p(90)": 115.03298699999999,
+            "p(95)": 126.05846075
+        },
+        "iterations": {
+            "count": 1000,
+            "rate": 9.456314963095194
+        },
+        "data_received": {
+            "count": 302710,
+            "rate": 2862.5211024785463
+        },
+        "http_req_tls_handshaking": {
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "min": 0,
+            "med": 0,
+            "avg": 0
+        },
+        "http_req_receiving": {
+            "p(95)": 0.15536415,
+            "min": 0,
+            "med": 0.0617235,
+            "avg": 0.07489731300000001,
+            "max": 0.326561,
+            "p(90)": 0.1412138
+        },
+        "http_req_failed": {
+            "passes": 18,
+            "fails": 982,
+            "value": 0.018
+        },
+        "iteration_duration": {
+            "avg": 1055.2694267790007,
+            "max": 1169.132913,
+            "p(90)": 1115.1905361000001,
+            "p(95)": 1127.16228075,
+            "min": 1001.012289,
+            "med": 1066.724084
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_reqs": {
+            "count": 1000,
+            "rate": 9.456314963095194
+        },
+        "http_req_duration": {
+            "min": 0,
+            "med": 65.641983,
+            "avg": 54.39885586500005,
+            "max": 168.691316,
+            "p(90)": 114.7075272,
+            "p(95)": 125.89388224999999
+        },
+        "http_req_sending": {
+            "med": 0.0449875,
+            "avg": 0.04518726500000002,
+            "max": 0.328302,
+            "p(90)": 0.0712179,
+            "p(95)": 0.08308259999999996,
+            "min": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "GET /recipes status 200": {
+                    "name": "GET /recipes status 200",
+                    "path": "::GET /recipes status 200",
+                    "id": "c34445145f61b917408a724e61fb556c",
+                    "passes": 240,
+                    "fails": 10
+                },
+                "POST /recipes status 2xx": {
+                    "path": "::POST /recipes status 2xx",
+                    "id": "8c77d582e0edbb10cde6c342f8cfcceb",
+                    "passes": 242,
+                    "fails": 8,
+                    "name": "POST /recipes status 2xx"
+                },
+                "GET /recipes/by-time status 200": {
+                    "name": "GET /recipes/by-time status 200",
+                    "path": "::GET /recipes/by-time status 200",
+                    "id": "7741a9ed87368dc4f4cb95046c4bec4e",
+                    "passes": 250,
+                    "fails": 0
+                },
+                "GET /recipes/by-ingredient status 200": {
+                    "name": "GET /recipes/by-ingredient status 200",
+                    "path": "::GET /recipes/by-ingredient status 200",
+                    "id": "09bd9ddbf8cac18cf4223cd7890d498d",
+                    "passes": 250,
+                    "fails": 0
+                }
+            }
+    }
+}
